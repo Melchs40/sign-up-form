@@ -1,31 +1,41 @@
-body {
-    background-color: aqua;
-}
+
 
 .main-page {
-    background-color: blueviolet;
     display: flex;
     flex-wrap: nowrap;
+    margin: -10px;
+    padding: 0;
 }
 
 .main-image {
     background-image: url("images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
     background-size: cover;
-    flex: 1;
+    flex: 2;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .user-page {
-    background-color: bisque;
-    flex: 1;
-    height: 30rem;
+    background-color: rgb(251, 251, 251);
+    flex: 3;
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 1rem 6rem;
 }
 
 .main-form {
-    background-color: whitesmoke;
+    background-color: white;
     box-sizing: border-box;
-    padding: 20px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    padding: 1rem 6rem;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
 
 }
 
@@ -35,8 +45,21 @@ input, button {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-    align-items: end;
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    color: aliceblue;
+}
+
+footer > a {
+    color: purple;
+}
+
+.submit-button {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(50, 50, 118);
+    padding: 2px 15px;
+    border-radius: 30px;
+    margin: 1rem 6rem;
 }
