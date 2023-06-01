@@ -15,13 +15,28 @@ body {
 }
 
 .user-page {
-    display: flex;
     background-color: bisque;
     flex: 1;
     height: 30rem;
 }
 
 .main-form {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+input, button {
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 5rem;
+    align-items: end;
 }
