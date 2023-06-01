@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+}
+
+.main-page {
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main-image {
+    background-image: url("images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+    background-size: cover;
+    flex: 1;
+}
+
+.user-page {
+    display: flex;
+    background-color: bisque;
+    flex: 1;
+    height: 30rem;
+}
+
+.main-form {
+    display: flex;
+    justify-content: space-between;
+}
