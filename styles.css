@@ -16,10 +16,14 @@ body {
     background-size: cover;
     flex: 2;
     height: 100vh;
-    background-position: center center;
+    
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
+}
+
+form {
+    font-size: 13px;
 }
 
 .overlay-div {
@@ -66,14 +70,13 @@ body {
 .form-section {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
     justify-content: space-between;
-    margin-right: 3rem;
 }
 
 .form-row {
     display: flex;
     flex-direction: column;
+    width: clamp(50px, 50%, 300px);
 }
 
 input, button {
@@ -88,10 +91,19 @@ input {
     margin-left: 0;
     border-radius: 1rem;
     padding: .3rem;
-    padding-right: 8rem;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 button {
+    margin-top: 2rem;
+}
+
+.form-buttons > p {
     margin-top: 2rem;
 }
 
@@ -104,6 +116,21 @@ footer {
 
 footer > a {
     color: purple;
+}
+
+.password-requirements {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+}
+
+.password-requirements > span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .submit-button {
