@@ -13,6 +13,7 @@ body {
 }
 
 .main-image {
+    appearance: none;
     background-image: url("images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
     background-size: cover;
     flex: 2;
@@ -83,8 +84,10 @@ input, button {
     appearance: none;
     box-sizing: border-box;
     margin: 1rem;
+}
 
-
+label {
+    padding-left: 1rem;
 }
 
 input {
@@ -92,6 +95,32 @@ input {
     border-radius: 1rem;
     padding: .3rem;
 }
+
+/* Creates positioning of "√" and "x" on form */
+
+input + span {
+    position: relative;
+  }
+  
+input + span::before {
+    position: relative;
+    top: -77px;
+  }
+  
+input:invalid {
+    border: 2px solid red;
+  }
+  
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+  }
+  
+input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
+  
 
 .form-buttons {
     display: flex;
