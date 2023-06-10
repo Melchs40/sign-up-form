@@ -96,6 +96,10 @@ input {
     padding: .3rem;
 }
 
+span {
+    height: 0px;
+}
+
 /* Creates positioning of "√" and "x" on form */
 
 input + span {
@@ -107,11 +111,11 @@ input + span::before {
     top: -77px;
   }
   
-input:invalid {
+  input:not(:placeholder-shown):not(:focus):invalid {
     border: 2px solid red;
   }
   
-input:invalid + span::before {
+input:not(:placeholder-shown):not(:focus):invalid + span::before {
     content: "✖";
     color: red;
   }
