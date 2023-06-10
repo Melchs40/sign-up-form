@@ -124,6 +124,15 @@ input:valid + span::before {
     content: "✓";
     color: green;
   }
+
+form.submitted input:invalid {
+    border: 2px solid red;
+}
+
+form.submitted input:invalid + span:before {
+    content: "✖";
+    color: red;
+}
   
 
 .form-buttons {
