@@ -9,7 +9,7 @@ body {
     flex-wrap: wrap;
     margin: -10px;
     padding: 0;
-    flex: 1 1 1200px;
+    flex: 1;
 }
 
 .main-image {
@@ -17,7 +17,7 @@ body {
     background-image: url("images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
     background-size: cover;
     flex: 2;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
     position: relative;
@@ -164,9 +164,18 @@ footer > a {
 
 .submit-button {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     background-color: rgb(50, 50, 118);
     padding: 2px 15px;
     border-radius: 30px;
     margin: 1rem 6rem;
+    flex-shrink: 0;
+}
+
+.invalid {
+    color: red;
+}
+
+.valid {
+    font-style: green;
 }
