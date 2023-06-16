@@ -30,13 +30,14 @@ form {
 .overlay-div {
     display: flex;
     justify-content: center;
-    height: 10rem;
+    height: 12rem;
     margin-top: calc(50vh - 5rem);
     margin-bottom: calc(50vh -5rem);
     background: rgba(0, 0, 0, .45);
 }
 
 .overlay-image {
+    padding: 1rem;
     height: 10rem;
     width: auto;
 }
@@ -111,7 +112,7 @@ input + span::before {
     top: -77px;
   }
   
-  input:not(:placeholder-shown):not(:focus):invalid {
+input:not(:placeholder-shown):not(:focus):invalid {
     border: 2px solid red;
   }
   
@@ -168,13 +169,6 @@ footer > a {
     gap: 1rem;
 }
 
-.password-requirements > span {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1;
-}
-
 .submit-button {
     color: white;
     font-size: 16px;
@@ -186,7 +180,7 @@ footer > a {
 }
 
 .invalid {
-    color: red;
+    font-style: red;
 }
 
 .valid {
