@@ -186,3 +186,27 @@ footer > a {
 .valid {
     font-style: green;
 }
+
+@media screen and (max-width: 755px) {
+    .main-image {
+        appearance: none;
+    background-image: url("images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+    background-size: cover;
+    flex: 2;
+    min-height: 10vh;
+    max-height: 40vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    }
+
+    .overlay-div {
+    display: flex;
+    justify-content: center;
+    height: 12rem;
+    margin-top: calc(15vh - 5rem);
+    margin-bottom: calc(90vh -5rem);
+    background: rgba(0, 0, 0, .45);
+}
+    
+}
