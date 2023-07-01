@@ -148,6 +148,7 @@ button {
 
 .form-buttons > p {
     margin-top: 2rem;
+    margin-right: 0;
 }
 
 footer {
@@ -177,6 +178,30 @@ footer > a {
     border-radius: 30px;
     margin: 1rem 6rem;
     flex-shrink: 0;
+    margin-top: 1.7rem;
+}
+
+.login-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.login-button {
+    appearance: none;
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-family: 'JelleeBold';
+    font-weight: normal;
+    color: rgb(50, 50, 118);
+    padding: 0;
+    margin-top: .8rem;
+    margin-left: .5rem;
+    margin-right: 2rem;
+    background-color: rgb(239, 235, 241);
 }
 
 .invalid {
